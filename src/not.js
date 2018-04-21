@@ -8,7 +8,7 @@
  * @param {int32} length nombre de bits a prendre en compte pour le calcul (max: 32, defaut 8)
  * @param {int32} offset index du permier bit a prendre en compte (defaut 0, max = 32-length)
  * 
- * @return {int} le resultat de l'operation AND
+ * @return {int} le resultat de l'operation NOT
  */
 module.exports = function (v, length=8, offset = 0 ) {
   let i = length > 0 ? 

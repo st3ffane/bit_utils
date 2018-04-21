@@ -1,5 +1,5 @@
 {
-  "name": "f2cann",
+  "name": "bit-utils",
   "version": "1.0.0",
   "description": "binary operations utility",
   "main": "build/bit.utils.min.js",
