@@ -4,7 +4,7 @@
   "description": "binary operations utility",
   "main": "build/bit.utils.min.js",
   "scripts": {
-    "test": "nyc --bail --exit --all mocha",
+    "test": "nyc --bail --exit --all mocha --recursive",
     "start:dev": "NODE_ENV=development && node index.js",
     "start": "NODE_ENV=production && node index.js"    
   },
