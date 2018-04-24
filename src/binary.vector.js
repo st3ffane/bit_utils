@@ -59,6 +59,12 @@ function factory (size, bsc){
     }
   }
 
+
+  return {
+    empty: empty,
+    getFactoryOptions: getFactoryOptions
+  }
+
   
 }
 
