@@ -11,7 +11,7 @@ class BinaryVector {
   set value(v){this._value = v;}
 
   or(vector){
-    ops.or(vector, input); // probleme, doit le faire 'in place'
+    this.value = ops.or(vector.value, input.value); // probleme, doit le faire 'in place'
   }
 }
 
