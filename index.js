@@ -9,7 +9,7 @@ module.exports = {
   xor: require('./src/xor'),
   not: require('./src/not'),
   sparsify: require('./src/sparsify'),
-  is_overwritten: require('./src/is_overwritten'),
-  binary_vector_factory: require('./src/binary.vector'),
+  is_overwritten: require('./src/is.overwritten'),
+  factory: require('./src/binary.vector'),
 
 };

@@ -1,5 +1,7 @@
 'use strict';
-const ops = require('../index');
+const or = require('./or');
+const and = require('./and');
+
 class BinaryVector {
   constructor(size, bsc){
     this._bsc = bsc;
@@ -10,8 +12,21 @@ class BinaryVector {
   get value(){return this._value;}
   set value(v){this._value = v;}
 
-  or(vector){
-    this.value = ops.or(vector.value, input.value); // probleme, doit le faire 'in place'
+  /**
+   * Permet d'enregistrer un vecteur binaire dans un autre
+   * @param {VECTOR} vector 
+   */
+  update(vector){
+    this.value = or(vector.value, input.value);
+  }
+
+  /**
+   * 
+   * @param {*} vector 
+   */
+  emit(vector, relax=0){
+    let v = and(vector.value, input.value);
+    // return bsc?
   }
 }
 
