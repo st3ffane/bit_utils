@@ -1,5 +1,5 @@
 'use strict';
-const ops = require('../../index');
+const ops = require('../index');
 class BinaryVector {
   constructor(size, bsc){
     this._bsc = bsc;
